@@ -1,8 +1,10 @@
+//一行溢出隐藏
 .inaline{
   overflow:hidden;
   white-space:nowrap;
   text-overflow:ellipsis;
 }
+//2行溢出隐藏
 .intwoline{
   display:-webkit-box!important;
   overflow:hidden;
@@ -12,3 +14,30 @@
   -webkit-line-clamp:2;//第二行溢出隐藏！
 
 }
+//引用的美化
+<!--begin-->
+blockquote {
+  background:#f9f9f9;
+  border-left:10px solid #ccc;
+  margin:1.5em 10px;
+  padding:.5em 10px;
+  quotes:"\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color:#ccc;
+  content:open-quote;
+  font-size:4em;
+  line-height:.1em;
+  margin-right:.25em;
+  vertical-align:-.4em;
+}
+blockquote:after {
+  color:#ccc;
+  content:close-quote;
+  font-size:4em;
+  line-height:.1em;
+  margin-right:.25em;
+  vertical-align:-.6em;
+}
+<!--end-->
+
