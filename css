@@ -40,4 +40,9 @@ blockquote:after {
   vertical-align:-.6em;
 }
 <!--end-->
+//css 选择器 
+div[class^="circle_"] class 以circle开始；
 
+div[class$="circle"] class 以circle结束；
+
+div[class*="circle"] class 含有circle。
