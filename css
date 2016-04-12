@@ -46,3 +46,10 @@ div[class^="circle_"] class 以circle开始；
 div[class$="circle"] class 以circle结束；
 
 div[class*="circle"] class 含有circle。
+
+
+//bootstrap 字体重置
+/*
+ *在bootstrap3 中 h1~h6 字体有定义。也要重置。
+ */
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
