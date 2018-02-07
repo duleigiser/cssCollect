@@ -53,3 +53,13 @@ div[class*="circle"] class 含有circle。
  *在bootstrap3 中 h1~h6 字体有定义。也要重置。
  */
 body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+
+浮动原理。
+.clearfix:after
+{
+		content:"\0020";//插入空白字符
+		height:0;//让字符不显示出来
+		clear:both;//非浮动的独立区块
+		display:block;
+
+	}
