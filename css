@@ -63,3 +63,26 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Micro
 		display:block;
 
 	}
+	
+经过一些列项目实践，关于浏览器出现滚动条和消失页面闪动，经过大型项目实践已经验证相当具有可行性，这里特意分享下：
+
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+}	
+	
+	
+	
